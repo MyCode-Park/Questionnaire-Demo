@@ -1,22 +1,20 @@
 import React from "react";
-
-import { BrowserRouter, Route, Switch,Redirect} from "react-router-dom";
-//import { Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LoginPage from "./components/LoginPage";
 import CreateAccount from "./components/CreateAccount";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-      <Switch>
-        <Route exact path="/" component={LoginPage} />
-        <Route exact path="/createAccount" component={CreateAccount} />
-       
-      </Switch>
-    </BrowserRouter>
-    </div>
-    
+    <Router>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<LoginPage />}></Route>
+          <Route path="/create" element={<CreateAccount />}></Route>
+        </Routes>
+      </main>
+    </Router>
   );
 }
 

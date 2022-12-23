@@ -1,0 +1,57 @@
+.navbar-box{
+    margin: 10px;
+} 
+ .route{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+ }
+.create{
+
+   padding: 8px;
+    border-radius: 10px;
+    background-color: gray;
+    box-shadow: 2px 2px 2px  black;
+    width: 10%;
+}
+
+h4{
+    margin: 10px;
+}
+.emp-container{
+    margin: 28px 0px;
+}
+
+.container{
+    padding: 16px 38px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 26px;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    margin: 22px 0px;
+    justify-content: flex-start;
+    flex-grow: 1;
+    
+}
+span{
+    padding: 10px 18px;
+    width: 18%;
+    background-color:  rgb(172, 161, 161);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight:500;
+
+}
+table{
+    background-color: whitesmoke;
+    border-radius: 10px;
+   
+}
+thead, tbody, tfoot, tr, td, th {
+    border-style: none !important;
+}
+.table-container{
+    margin: 0px 30px;
+}
